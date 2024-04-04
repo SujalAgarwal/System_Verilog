@@ -1,0 +1,14 @@
+`timescale 1ns\1ps
+module tb();
+int arr1[5];
+int arr2[5];
+
+initial begin
+for(int i=0;i<5;i++) begin
+arr1[i]=5*i;
+end
+
+arr2=arr1;
+$display("arr: %0p",arr2);
+end
+endmodule
